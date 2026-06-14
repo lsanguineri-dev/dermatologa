@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dermatóloga</title>
 
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f7f3ef;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .landing {
+      width: 100vw;
+      height: 100vh;
+      background: url('banner.jpg') no-repeat center center;
+      background-size: contain;
+      position: relative;
+    }
+
+    .icons {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: max(24px, env(safe-area-inset-bottom));
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .icons a {
+      display: inline-flex;
+      width: 28px;
+      height: 28px;
+      opacity: 0.9;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .icons a:hover {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+
+    .icons img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      .landing {
+        background-size: contain;
+        background-position: center center;
+      }
+
+      .icons {
+        bottom: max(20px, env(safe-area-inset-bottom));
+        gap: 16px;
+      }
+
+      .icons a {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="landing"></div>
+
+  <div class="icons">
+    <a href="https://instagram.com/USUARIO_A_DEFINIR" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    </a>
+
+    <a href="https://wa.me/541136559056" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+    </a>
+  </div>
+</body>
+</html>
